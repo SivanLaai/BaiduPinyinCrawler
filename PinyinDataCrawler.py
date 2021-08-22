@@ -32,7 +32,7 @@ from=poem
 pn=1
 _=1628826451938'''
 
-class CloverPinyinBuild:
+class PinyinDataCrawler:
     homographWeightDict = dict()
     def __init__(self):
         self.conn = self.getConnection()
@@ -277,9 +277,9 @@ u ū ú ǔ ù
             time.sleep(random.randint(1, 5) * 0.2)
 
 if __name__ == "__main__":
-    #CloverPinyinBuild().crawlerExactPhrasePinyin(word="道德经", word_index=243, phrase=False)
-    #CloverPinyinBuild().fixesDatas()
-    CloverPinyinBuild().crawlerPhraseDict()
-    #CloverPinyinBuild().getCurrCharacterStoreIndex()
+    #PinyinDataCrawler().crawlerExactPhrasePinyin(word="道德经", word_index=243, phrase=False)
+    #PinyinDataCrawler().fixesDatas()
+    PinyinDataCrawler().crawlerPhraseDict()
+    #PinyinDataCrawler().getCurrCharacterStoreIndex()
 
-    #CloverPinyinBuild().getPlainPinyin("guà hào")
+    #PinyinDataCrawler().getPlainPinyin("guà hào")
