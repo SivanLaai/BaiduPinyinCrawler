@@ -9,8 +9,8 @@
 安装
 
 ```bash
-$ git clone https://github.com/SivanLaai/exact-pinyin-mark.git
-$ cd exact-pinyin-mark
+$ git clone https://github.com/SivanLaai/BaiduPinyinCrawler.git
+$ cd BaiduPinyinCrawler
 $ pip install -r requirements.txt
 ```
 
