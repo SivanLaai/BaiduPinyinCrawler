@@ -11,6 +11,7 @@
 ```bash
 $ git clone https://github.com/SivanLaai/BaiduPinyinCrawler.git
 $ cd BaiduPinyinCrawler
+$ mv setting_sample.ini setting.ini
 $ pip install -r requirements.txt
 ```
 
@@ -18,7 +19,7 @@ $ pip install -r requirements.txt
 
 创建表格
 ```sql
-CREATE TABLE `single_character` (
+CREATE TABLE `single_character_info` (
   `pinyin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `word` varchar(255) NOT NULL,
   `plainPinyin` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
@@ -46,7 +47,7 @@ DATA_BASE_NAME = Fund
 运行爬虫
 ```bash
 # 会开始抓取百度下所有的词组和拼音以及常见的含义。
-python PinyinDataCrawler.py
+$ python PinyinDataCrawler.py
 ```
 
 #### 注意事项
