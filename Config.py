@@ -1,6 +1,5 @@
 import configparser
 import sys
-from selenium import webdriver
 
 
 global config
